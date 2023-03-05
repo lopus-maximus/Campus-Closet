@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .thing {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-container {
+    color: #fff;
+    background-color: #000000;  
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .menu {
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .links {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
+  
+  .photo-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; 
+  }
+  
+  .photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+  }
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+  .social {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+  .features-menu{
+    display: none;
+  }
+
+  .dropdown:hover .features-menu {
+    display: flex;
+    flex-direction: column;
+    background: #000000;
+    border-radius: 0px;
+    padding-top: 60px;
+    position: absolute;    
+    top: -25px;
+    left: 0px;
+    z-index: 1;
+    width: 100px;
+  }
+  
+
+  .dropdown {
+    position: relative;
+  }
+  .dropdown > span {
+    z-index: 2;
+    position: relative;  
+    cursor: pointer;
+  }
+  a:link,
+  a:visited {
+    color: #dbd8d8;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
